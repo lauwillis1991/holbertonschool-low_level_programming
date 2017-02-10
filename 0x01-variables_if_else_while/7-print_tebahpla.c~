@@ -1,0 +1,12 @@
+int main(void)
+
+{
+	int start;
+
+	for (start = 'z'; start >= 'a'; start--)
+	{
+	putchar(start);
+	}
+	putchar('\n');
+	return (0);
+}
