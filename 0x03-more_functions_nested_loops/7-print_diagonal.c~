@@ -1,0 +1,19 @@
+#include "holberton.h"
+
+/**
+ * print_diagonal - draws a \ depending on the number inputted.
+ * @n: type of int
+ * Description: diagonal line coming up.
+ */
+
+void print_diagonal(int n)
+{
+	int i;
+
+	for(i = n; i > 0 ; i--)
+	{
+		_putchar('\\');
+		_putchar('\n');
+		_putchar(' ');
+	}
+}
