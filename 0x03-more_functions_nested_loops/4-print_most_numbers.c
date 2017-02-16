@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * print_numbers - print the numbers from 0 to 9 excluding 2 and 4.
+ * print_most_numbers - print the numbers from 0 to 9 excluding 2 and 4.
  * Description: You can only use _putchar twice
  */
 
