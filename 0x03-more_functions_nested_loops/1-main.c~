@@ -1,0 +1,19 @@
+#include "holberton.h"
+#include <stdio.h>
+
+/**
+ * _isalpha - Check if character is an alphabetic character.
+ * @c: type int character
+ * Return: 1 if digit, 0 otherwise
+ */
+
+int main(void)
+{
+	char c;
+
+	c = '0';
+	printf("%c: %d\n", c, _isdigit(c));
+	c = 'a';
+	printf("%c: %d\n", c, _isdigit(c));
+	return (0);
+}
