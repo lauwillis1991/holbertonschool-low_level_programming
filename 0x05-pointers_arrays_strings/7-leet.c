@@ -1,9 +1,9 @@
 #include "holberton.h"
 
 /**
- * leet - converts certain letters to numbers
- * @s: type string
- * Return: leet speak
+ * leet - encode a string into 1337
+ * @s: string
+ * Return: encoded string `s`
  */
 
 char *leet(char *s)
