@@ -1,24 +1,25 @@
 #include "holberton.h"
 
 /**
- * _sqrt_recursion - sqrt of number recusively
+ * _sqrt_recursion - return the natural square root of a number
  * @n: int number
- * Return: natural sqrt of number. if not -1
+ * Return: If no natural square root, return -1. Else return natural
+ * square root
  */
 
 int _sqrt_recursion(int n)
 {
-	return (helper(n, 1));
+	return (halp(n, 1));
 }
 
 /**
- * helper - helper function to solve _sqrt_recursion
- * @c: number to determine sqrt
- * @i: incremental number vs c
- * Return: sqrt if able if not -1
+ * halp - helper function to solve _sqrt_recursion
+ * @c: number to determine if square root
+ * @i: incrementer to compare against `c`
+ * Return: square root if natural square root, or -1 if none found
  */
 
-int helper(int c, int i)
+int halp(int c, int i)
 {
 	int square;
 
@@ -26,7 +27,7 @@ int helper(int c, int i)
 	if (square == c)
 		return (i);
 	else if (square < c)
-		return (helper(c, i + 1));
+		return (halp(c, i + 1));
 	else
 		return (-1);
 }
