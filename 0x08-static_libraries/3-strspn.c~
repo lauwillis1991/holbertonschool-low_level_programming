@@ -1,0 +1,21 @@
+#include "holberton.h"
+
+/**
+ * _isdigit - Check if character is a digit.
+ * @c: type int character
+ * Return: 1 if digit, 0 otherwise
+ */
+
+
+unsigned int _strspn(char *s, char *accept)
+
+{
+	if (c > 47 && c < 58)
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
+}
