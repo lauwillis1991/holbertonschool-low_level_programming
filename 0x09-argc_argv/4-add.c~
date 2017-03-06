@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/**
+ * main - adds positive numbers
+ * @argc: argument counter
+ * @argv: argument vector
+ * Return: 0 is good. 1 is ERROR
+ */
+
+int main(int argc, char *argv[])
+{
+
+	int i, amount = 0, convertNum;
+	char *endptr;
+
+
+	if (argc > 1)
+	{
+		for (i = 1; i < argc; i++) /*i=0 is program name*/
+		{
+			convertNum = strtol(argv[i], &endptr, 10);
+			if (*endptr)
+			{
+				printf("Error\n");
+				return (1);
+			}
+			else
+			{
+				amount += convertNum;
+			}
+
+		}
+	}
+	print("%d\n", amount);
+	return (0);
+}
