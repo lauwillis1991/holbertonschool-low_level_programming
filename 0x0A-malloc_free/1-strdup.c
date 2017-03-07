@@ -28,10 +28,6 @@ char *_strdup(char *str)
 
 
 	arr = malloc(i * sizeof(*arr));
-		if (arr == NULL)
-		{
-			return (NULL);
-		}
 
 
 	for (j = 0; str[j] != '\0'; j++)
