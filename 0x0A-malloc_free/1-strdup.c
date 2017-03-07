@@ -13,7 +13,7 @@ char *_strdup(char *str)
 	int i, j;
 
 
-	if (str == '\0')
+	if (str == NULL)
 	{
 		return (NULL);
 	}
@@ -37,6 +37,7 @@ char *_strdup(char *str)
 	{
 		arr[j] = str[j];
 	}
+	j++;
 
 	arr[j] = '\0';
 
