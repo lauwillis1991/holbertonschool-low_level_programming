@@ -23,6 +23,7 @@ int _strlen(char *s)
  * catTime - this is where we concatenate the 2 parameters
  * @s1: char type of s1.
  * @s2: char type of s2.
+ * @n: integer to check on s2
  * Return: concatenated string.
  */
 
