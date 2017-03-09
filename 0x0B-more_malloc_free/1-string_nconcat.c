@@ -29,19 +29,30 @@ int _strlen(char *s)
 char *catTime(char *s1, char *s2, int n)
 {
 	char *result;
-	int i, j;
+	int i, j, str1;
 
 	if (n > _strlen(s2))
+	{
 		n = _strlen(s2);
+	}
 
-	result = malloc(_strlen(s1) + n + 1);
+	str1 = _strlen(s1);
+
+	result = malloc(str1 + n + 1);
+
 	if (result == NULL)
+	{
 		return (NULL);
+	}
 
 	for (i = 0, j = 0 ; s1[i] != '\0' ; i++, j++)
+	{
 		result[j] = s1[i];
+	}
 	for (i = 0 ; i < n ; i++, j++)
+	{
 		result[j] = s2[i];
+	}
 	result[j] = '\0';
 	return (result);
 }
@@ -59,10 +70,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *result;
 
 	if (s1 == NULL)
+	{
 		s1 = "";
+	}
 	if (s2 == NULL)
-
+	{
 		s2 = "";
+	}
 	result = catTime(s1, s2, n);
 	return (result);
 }
