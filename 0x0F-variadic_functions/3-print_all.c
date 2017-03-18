@@ -64,7 +64,7 @@ void print_all(const char * const format, ...)
 	va_list args;
 	char *s;
 
-	checker storage[] = {
+	find storage[] = {
 		{"c", _printChar},
 		{"i", _printInt},
 		{"f", _printFloat},
@@ -79,7 +79,7 @@ void print_all(const char * const format, ...)
 		j = 0;
 		while (j < 4)
 		{
-			if (*storage[j].type_is == format[i])
+			if (*storage[j].c == format[i])
 			{
 				printf("%s", s);
 				storage[j].f(args);

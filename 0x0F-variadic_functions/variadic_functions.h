@@ -2,11 +2,11 @@
 #define VARIADIC_FUNCTIONS_H
 #include <stdarg.h>
 
-        typedef struct checker
-        {
-		char *type_is;
-		void (*f)();
-        } checker;
+typedef struct find
+{
+char *c;
+void (*f)();
+} find;
 
 int _putchar(char c);
 int sum_them_all(const unsigned int n, ...);
