@@ -64,12 +64,6 @@ void print_all(const char * const format, ...)
 	va_list args;
 	char *s;
 
-	typedef struct checker
-	{
-	char *type_is;
-	void (*f)();
-	} checker;
-
 	checker storage[] = {
 		{"c", _printChar},
 		{"i", _printInt},

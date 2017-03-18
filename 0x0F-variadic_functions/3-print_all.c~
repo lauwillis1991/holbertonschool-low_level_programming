@@ -88,7 +88,7 @@ void print_all(const char * const format, ...)
 			if (*storage[j].type_is == format[i])
 			{
 				printf("%s", s);
-				storage([j].f(args);
+				storage[j].f(args);
 					s = ", ";
 			}
 					j++;
