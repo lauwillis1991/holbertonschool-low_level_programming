@@ -1,0 +1,35 @@
+#include "lists.h"
+
+/**
+ * delete_nodeint_at_index - removes node at specified index
+ * @head: double head pointer
+ * @index: index of node to delete
+ * Return: 1 if Success / -1 if Failed
+ */
+int delete_nodeint_at_index(listint_t **head, unsigned int index)
+{
+	listint_t *popNode, *temp;
+	unsigned int count;
+
+	if (head == NULL || *head == NULL)
+		return (-1);
+	for (count = 0, temp = *head; temp != NULL; count++)
+	{
+		if (index == 0)
+		{
+			popNode = *head;
+			*head = popNode->next;
+			free(popNode);
+			return (1);
+		}
+		if (count + 1 == index)
+		{
+			popNode = temp->next;
+			temp->next = popNode->next;
+			free(popNode);
+			return (1);
+		}
+		temp = temp->next;
+	}
+	return (-1);
+}
